@@ -3,6 +3,11 @@
     src: url(./police/PlayfairDisplay-Black.otf);
 }
 
+@font-face {
+    font-family: Lato;
+    src: url(./police/Lato/Lato-Regular.ttf);
+}
+
 /* =============== CONSTANTES =============== */
 
 h1 {
@@ -21,16 +26,19 @@ h2{
 
 h3{
     font-size: 2vw;
+    font-family: Playfairdisplay;
 }
 
 h4{
-     font-size: 1.5vw;
+    font-size: 1.5vw;
+    font-family: Playfairdisplay;
 }
 
 p,a{
     font-size: 2vh;
     text-decoration: none;
     color: black;
+    font-family: Lato;
 }
 
 /* ================= RESET & LAYOUT ================= */
@@ -119,27 +127,14 @@ header {
 
 .competences,
 .projets,
-.cv {
+.cv
+.contact {
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10vw;
-    height: 5vh;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    border-right: solid rgba(0, 0, 0, 0.3) 0.2vh;
-}
-
-.contact{
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 10vw;
+    width: 15vw;
     height: 5vh;
     text-decoration: none;
     color: black;
@@ -542,6 +537,11 @@ main {
     height: 0;
     border-top: 0.4em solid transparent;
     border-bottom: 0.4em solid transparent;
+    transition: transform 0.2s ease;
+}
+
+a:hover .arrow {
+    transform: scale(1.4);
 }
 
 .arrow-realiser-optimiser {
